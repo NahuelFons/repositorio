@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #121112;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #121112;
+}
+
+.logo{
+    text-align: center;
+}
+
+header a img{
+    width: 30%;
+}
+
+/*Main*/
+.banner {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/*Card*/
+.destacados-container {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    place-content: center;
+    gap: 1rem;
+}
+
+.carta {
+    border-radius: 4px;
+    background-color: #ffff;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+
+.carta-body {
+    padding: 1em;
+}
+
+.img-card {
+    width: 100%;
+}
+
+/*Marcas trabajadas*/
+.marcas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    place-content: center;
+    margin-bottom: 50px;
+}
+
+.marcas{
+    filter: grayscale(100%);
+    opacity: 0.4;
+    justify-self: center;
+}
+
+.marcas:hover {
+    filter: none;
+    opacity: 1.0;
+    transition: all .5s ease-in-out;
+}
+
+/*Galeria*/
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 400px;
+    place-content: center;
+    grid-gap: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: content;
+}
+
+.box:nth-child(2) {
+    grid-column-start: span 2;
+}
+
+.box:nth-child(6) {
+    grid-column-start: span 2;
+}
+
+.box:nth-child(9) {
+    grid-column-start: span 2;
+}
+
+/*Contacto*/
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    padding: 25px 25px 10px 25px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+}
+
+.input-formulario {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+textarea {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.boton {
+    background-color: #ffffff;
+}
+
+.titulo-local {
+    text-align: center;
+}
+
+.local-container {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+iframe {
+    width: 80%;
+}
+
+/*Nosotros*/ 
+.img-about img {
+    width: 100%;
+    height: auto;
+}
+
+.about-container {
+    display: grid;
+    grid-template-areas: 
+    "img1  text1  text1"
+    "img1  .  signature";
+
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 200px 300px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    justify-items: center;
+}
+
+.img-about {
+    grid-area: img1;
+}
+
+.about-text {
+    grid-area: text1;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.signa {
+    grid-area: signature;
+}
+
+/*Llantas*/
+.box-llantas{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 500px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/*Footer*/
+footer {
+    background-color: #121112;
+    text-align: center;
+}
+
+footer img {
+    width: 300px;
+}
+
+footer div img {
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.copyright {
+    color: white;
+}
+
+@media only screen and (max-width: 991px) {
+    .galeria-container {
+        grid-template-columns: 320px;
+        grid-template-rows: auto;
+        place-content: center;
+    }
+
+    .box:nth-child(2) {
+        grid-column-start: auto;
+    }
+    
+    .box:nth-child(6) {
+        grid-column-start: auto;
+    }
+    
+    .box:nth-child(9) {
+        grid-column-start: auto;
+    }
+
+    .contacto {
+        width: 40%;
+    }
+
+    .about-container {
+        grid-template-areas:
+        "img1"
+        "text1"
+        "signature";
+        grid-template-columns: 60%;
+        grid-template-rows: auto;
+    }
+
+    .about-text {
+        grid-area: text1;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    
+}
