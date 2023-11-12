@@ -1,0 +1,17 @@
+/*Footer*/
+footer {
+    background-color: $negro-proto;
+    text-align: center;
+    img {
+        width: 300px;
+    }
+    div img {
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .copyright {
+        color: $blanco;
+    }
+}

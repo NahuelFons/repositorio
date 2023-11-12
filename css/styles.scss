@@ -1,0 +1,22 @@
+$negro-proto: #121112;
+$blanco: #ffff;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: $negro-proto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/_index";
+@import "partials/nosotros";
+@import "partials/galeria";
+@import "partials/contacto";
+@import "partials/mediaQ";
+

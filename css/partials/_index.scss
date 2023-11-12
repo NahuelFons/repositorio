@@ -1,0 +1,53 @@
+/*Main*/
+.banner {
+    width: 100%;
+    margin-bottom: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Card*/
+.destacados-container {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    place-content: center;
+    gap: 1rem;
+    .carta {
+        border-radius: 4px;
+        background-color: $blanco;
+        box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+        margin-bottom: 50px;
+        .img-card {
+            width: 100%;
+        }
+        .carta-body {
+            padding: 1em;
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+    }
+}
+
+/*Marcas trabajadas*/
+.marcas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    place-content: center;
+    margin-bottom: 50px;
+    .marcas{
+        filter: grayscale(100%);
+        opacity: 0.4;
+        justify-self: center;
+    }
+    .marcas:hover {
+        filter: none;
+        opacity: 1.0;
+        transition: all .5s ease-in-out;
+    }
+}

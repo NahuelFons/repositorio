@@ -1,0 +1,29 @@
+/*Nosotros*/
+.about-container {
+    display: grid;
+    grid-template-areas: 
+    "img1  text1  text1"
+    "img1  .  signature";
+
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 200px 300px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    justify-items: center;
+    .img-about {
+        grid-area: img1;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .about-text {
+        grid-area: text1;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .signa {
+        grid-area: signature;
+    }
+}

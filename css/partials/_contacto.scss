@@ -1,0 +1,47 @@
+/*Contacto*/
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 400px;
+        padding: 25px 25px 10px 25px;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+        .input-formulario {
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            outline: none;
+        }
+        textarea {
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            outline: none;
+        }
+        .boton {
+            background-color: $blanco;
+        }
+    }
+}
+
+.local-container {
+    .titulo-local {
+        text-align: center;
+    }
+    .box-map {
+        display: flex;
+        flex: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        iframe {
+            width: 80%;
+        }
+    }
+}

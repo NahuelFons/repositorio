@@ -1,0 +1,36 @@
+@media only screen and (max-width: 991px) {
+    .galeria-container {
+        grid-template-columns: 320px;
+        grid-template-rows: auto;
+        place-content: center;
+        .box:nth-child(2) {
+            grid-column-start: auto;
+        }
+        
+        .box:nth-child(6) {
+            grid-column-start: auto;
+        }
+        
+        .box:nth-child(9) {
+            grid-column-start: auto;
+        }
+    }
+
+    .contacto {
+        width: 40%;
+    }
+
+    .about-container {
+        grid-template-areas:
+        "img1"
+        "text1"
+        "signature";
+        grid-template-columns: 60%;
+        grid-template-rows: auto;
+        .about-text {
+            grid-area: text1;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+    }
+}
