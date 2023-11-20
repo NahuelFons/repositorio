@@ -92,6 +92,32 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 
+/*Stock*/
+.stock-container {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  place-content: center;
+  gap: 1rem;
+}
+.stock-container .carta {
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.stock-container .carta .img-card {
+  width: 100%;
+}
+.stock-container .carta .carta-body {
+  padding: 1em;
+}
+.stock-container .carta .carta-body h2 {
+  font-size: 15px;
+  text-align: center;
+}
+
 /*Nosotros*/
 .about-container {
   display: grid;
@@ -133,6 +159,10 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: content;
+  transition: 0.5s;
+}
+.galeria-container img:hover {
+  transform: scale(1.75);
 }
 .galeria-container .box:nth-child(2) {
   grid-column-start: span 2;
@@ -217,6 +247,10 @@ h1 {
     grid-area: text1;
     font-size: 15px;
     margin-top: 15px;
+  }
+  .stock-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
   }
 }
 
